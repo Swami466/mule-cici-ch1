@@ -65,7 +65,7 @@ jobs:
         CLIENT_SECRET: ${{ secrets.CA_CLIENT_SECRET }}
         BUSINESSID: ${{ secrets.BUSINESS_GROUP_ID }}
       run: |
-        mvn clean deploy -DmuleDeploy -Denvironment=test -Dapp-name=Hello-swami467 \
+        mvn clean deploy -DmuleDeploy -Denvironment=Sandbox -Dapp-name=Hello-swami468 \
         -Dca.clientId=${{ secrets.CA_CLIENT_ID }} -Dca.clientSecret=${{ secrets.CA_CLIENT_SECRET }} \
         -DbusinessGroupId=${{ secrets.BUSINESS_GROUP_ID }} -Dcicd.welcome.message="hello mule ch1 test app " -Duser="mr swami"
   
